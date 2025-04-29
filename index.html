@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Você</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      color: #ff1493;
+      font-size: 6vw;
+    }
+
+    .heart {
+      font-size: 20vw;
+      color: #ff1493;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .heart:active {
+      transform: scale(1.2);
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 5vw;
+      color: #c71585;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .show {
+      opacity: 1;
+    }
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      .heart {
+        font-size: 100px;
+      }
+
+      .message {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Oi, meu amor!</h1>
+  <p>Clique no coração:</p>
+
+  <div class="heart" onclick="mostrarMensagem()">&#10084;</div>
+
+  <div class="message" id="mensagem">Você é a melhor parte do meu dia, eu te amo!</div>
+
+  <script>
+    function mostrarMensagem() {
+      const msg = document.getElementById("mensagem");
+      msg.classList.add("show");
+    }
+  </script>
+
+</body>
+</html>
