@@ -8,7 +8,7 @@ Um projeto feito com carinho, dedicado a uma pessoa especial.
 - JavaScript 
 
 ## Como visualizar
-Abra o arquivo index.html em qualquer navegador.
+Abra o arquivo https://ketellynoliveira.github.io/pra-ele/ em qualquer navegador.
 
 ## Feito por
 Ketellyn Oliveira
